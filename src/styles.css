@@ -1,0 +1,33 @@
+:root{
+--bg:#0b1020; --card:#121833; --muted:#7b86a5; --accent:#6ee7ff; --good:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:linear-gradient(180deg,#0b1020,#0e1730);color:#e5e7eb;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.logo{width:36px;height:36px}
+.card{background:var(--card);border:1px solid #1e274a;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.card-inner{padding:18px}
+.hint{color:var(--muted);font-size:.95rem}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid #263158;background:#1a2449;color:#e5e7eb;cursor:pointer;font-weight:600}
+.button:hover{background:#1d2a57}
+.primary{border-color:#1b8aff;background:linear-gradient(180deg,#1b8aff,#1161d6)}
+.primary:hover{filter:brightness(1.05)}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:.8rem;border:1px solid #2a355f;color:#cfd6f3}
+.dropzone{border:2px dashed #33406d;border-radius:16px;padding:28px;text-align:center;transition:.2s;background:rgba(255,255,255,0.02)}
+.dropzone.drag{background:rgba(110,231,255,.08);border-color:var(--accent)}
+.progress{height:8px;background:#1f2a4f;border-radius:999px;overflow:hidden}
+.progress>div{height:100%;background:linear-gradient(90deg,#36d1ff,#1b8aff);width:0%}
+.code{background:#0a0f22;border:1px solid #1e274a;border-radius:12px;padding:12px;font-family:ui-monospace,Menlo,Monaco,monospace;white-space:pre-wrap}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+.kpi{display:flex;flex-direction:column;gap:6px;padding:12px 14px;border-radius:12px;background:#0f1530;border:1px solid #1e274a}
+.kpi .val{font-size:1.2rem;font-weight:700}
+.tag{padding:2px 8px;border-radius:10px;border:1px solid #2a355f}
+.tag.good{border-color:#1f6f3f;color:#86efac}
+.tag.bad{border-color:#6b1f2a;color:#fecaca}
+.tag.warn{border-color:#5b470f;color:#fde68a}
+.error{color:#fecaca}
+.small{font-size:.9rem;color:#c7d2fe}
